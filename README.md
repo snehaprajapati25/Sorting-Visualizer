@@ -14,7 +14,7 @@ Sorting Visualizer is a web application built with React that allows users to vi
 - **Bubble Sort**
 - **Quick Sort**
 - **Merge Sort**
-- - **Heap Sort**
+- **Heap Sort**
 
 
 ## Technologies Used
