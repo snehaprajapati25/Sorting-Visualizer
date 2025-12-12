@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+}
+
+.navbar{
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    color: white ;
+    font-size: 24px;
+    padding:30px ;
+    text-align: center;
+  }
+
+.array-container {
+    position: absolute;
+    width: 90%;
+    border: 1px solid rgb(213, 225, 229);
+    margin: 30px 50px 0 70px;
+    border-radius: 20px ;
+    background-color: rgba(204, 227, 234, 0.745);
+    /* top: 100px; */
+  }
+  
+  .array-bar {
+    width: 2px;
+    display: inline-block;
+    margin: 30px 1px;
+    flex-grow: 1;
+  }
+
+  .control-container {
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    gap: 20px; /* Space between elements */
+    margin-top: 20px;
+    text-align: center;
+}
+
+   label {
+    font-size: 18px; /* Increased font size */
+    display: flex; /* Ensures label is above the slider */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    font-size: 22px;
+}
+
+label input[type="range"] {
+    margin-left: 10px; /* Adjust spacing between 'Size' and slider */
+    margin-top: 5px;   /* Optional: space below the label */
+}
+
+  input[type="range"] {
+     -webkit-appearance: none;
+    appearance: none;
+    width: 300px;
+    height: 4px;
+    background: rgb(6, 41, 80);
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* WebKit browsers (Chrome, Edge, Safari) - slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 4px;
+    background: rgb(6, 41, 80);
+    border-radius: 5px;
+}
+
+/* WebKit browsers - slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    background: white;
+    border: 2px solid #1CB5E0;
+    border-radius: 50%;
+    margin-top: -6px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+/* Firefox - slider track */
+input[type="range"]::-moz-range-track {
+    height: 4px;
+    background: linear-gradient(to right, #1CB5E0, #000851);
+    border-radius: 10px;
+}
+
+/* Firefox - slider thumb */
+input[type="range"]::-moz-range-thumb {
+    height: 16px;
+    width: 16px;
+    background: white;
+    border: 2px solid #1CB5E0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+    background-color: #1CB5E0;
+    transform: scale(1.2);
+}
+
+.speed-slider {
+    margin: 0 10px;
+    width: 300px;
+    background-color: lightblue;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Distance between label and slider */
+}
+
+
+
+.elements {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.elements button {
+    background-color:rgb(6, 41, 80);
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.elements button:hover {
+    background-color: rgb(62, 100, 143);
+}
+
+.elements button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+@media screen and (min-width: 600px) {
+    .navbar {
+        font-size: 22px; /* Reduce navbar text size */
+        padding: 20px; /* Reduce padding */
+        height: 50px;
+    }
+
+    .elements{
+        display: flex;
+        gap: 5px;
+    }
+
+    .elements button {
+        padding: 10px 20px; /* Adjust button size */
+        font-size: 12px;
+    }
+
+    .array-container {
+        width: 70%; /* Make array container full width */
+        margin: 65px 75px ; /* Adjust margin */
+        padding: 0;
+    }
+
+    input[type="range"] {
+        width: 50px; /* Increase slider width */
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .navbar {
+        font-size: 20px;
+        padding: 25px;
+    }
+
+    .elements {
+        align-items: center;
+    }
+
+    .elements button {
+        width: 100px; /* Make buttons wider */
+        padding: 10px;
+        margin: 0;
+        height: 47px;
+    }
+
+    .array-container {
+        width: 90%;
+        margin: 20px;
+    }
+
+    input[type="range"] {
+        width: 50px; /* Increase slider width */
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .navbar {
+        font-size: 28px;
+        padding: 40px;
+    }
+
+    .elements{
+        display: flex;
+    }
+
+    .elements button {
+        font-size: 20px;
+        padding: 20px 40px;
+    }
+
+    .array-container{
+        margin: 80px;
+        width: 90%;
+    }
+
+    label{
+        gap: 5px;
+    }
+}
