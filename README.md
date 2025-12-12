@@ -37,13 +37,12 @@ Each algorithm is visualized with clear transitions to help understand its behav
 git clone https://github.com/snehaprajapati25/Sorting-Visualizer.git
 cd Sorting-Visualizer
 
-Install dependencies
+**Install dependencies**
 npm install
 
-Run in development mode
+**Run in development mode**
 npm start
 
 Your app will be available at:
 👉 http://localhost:3000
-git clone https://github.com/snehaprajapati25/Sorting-Visualizer.git
-cd Sorting-Visualizer
+
